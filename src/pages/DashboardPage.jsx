@@ -16,7 +16,7 @@ export default function SinglePageDashboard() {
     setResponse(null);
 
     try {
-      const res = await fetch('https://YOUR-RENDER-APP-NAME.onrender.com/api/research', {
+      const res = await fetch('https://multi-agent-backend-8yxu.onrender.com/api/research', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ topic, url: targetUrl || undefined }),
